@@ -5,6 +5,7 @@
 " Settings for gvim (linux) / macvim
 :highlight Search guibg=yellow guifg=black
 
+set noswapfile
 set incsearch
 set cursorline
 set number
