@@ -10,6 +10,7 @@ set incsearch
 set cursorline
 set number
 set autoindent 
+set nowrap
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
