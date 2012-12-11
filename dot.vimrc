@@ -1,8 +1,8 @@
 ":colorscheme slate 
 :colorscheme desert 
-" Settings for terminal version of vim
+" settings for terminal version of vim
 :highlight Search ctermbg=yellow ctermfg=black
-" Settings for gvim (linux) / macvim
+" settings for gvim (linux) / macvim
 :highlight Search guibg=yellow guifg=black
 
 set noswapfile
@@ -14,14 +14,20 @@ set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
+"set hlsearch
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-"autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
-"autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+" auto reload .vimrc or .gvimrc when file is saved
+autocmd bufwritepost dot.vimrc source $MYVIMRC
+autocmd bufwritepost dot.gvimrc source $MYVIMRC
+autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepost .gvimrc source $MYVIMRC
+filetype plugin indent on
 
 imap <Tab> <C-X><C-F>
 map <D-t> :CommandT<CR>
 map <F2> :NERDTreeToggle<CR>
 map <C-b> :BufExplorer<CR>
+" map <silent> <Space> :nohlsearch<Bar>:echo<CR>
