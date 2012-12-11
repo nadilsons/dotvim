@@ -40,7 +40,3 @@
 [submodule "bundle/repeat"]
     path = bundle/repeat
     url = https://github.com/tpope/vim-repeat
-# plugin manager
-[submodule "pathogen"]
-    path = pathogen
-    url = git://github.com/tpope/vim-pathogen.git
