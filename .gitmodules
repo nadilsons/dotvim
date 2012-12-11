@@ -1,4 +1,4 @@
-# plugin manager
+# vim plugin manager
 [submodule "pathogen"]
     path = pathogen
     url = git://github.com/tpope/vim-pathogen.git
