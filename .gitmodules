@@ -42,5 +42,5 @@
     url = https://github.com/tpope/vim-repeat
 # work with rails easy
 [submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = https://github.com/tpope/vim-rails
+    path = bundle/vim-rails
+    url = https://github.com/tpope/vim-rails
