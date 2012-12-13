@@ -1,5 +1,5 @@
-":colorscheme slate 
-:colorscheme desert 
+":colorscheme slate
+:colorscheme desert
 " settings for terminal version of vim
 :highlight Search ctermbg=yellow ctermfg=black
 " settings for gvim (linux) / macvim
@@ -9,12 +9,14 @@ set noswapfile
 set incsearch
 set cursorline
 set number
-set autoindent 
+set autoindent
 set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
-"set hlsearch
+set hlsearch
+set nolist
+set shellcmdflag=-ic " load .bashrc
 
 call pathogen#infect()
 
@@ -30,10 +32,13 @@ imap <Tab> <C-X><C-F>
 map <D-t> :CommandT<CR>
 map <F2> :NERDTreeToggle<CR>
 map <C-b> :BufExplorer<CR>
-" map <silent> <Space> :nohlsearch<Bar>:echo<CR>
+map ,m :Rmodel<CR>
+map ,v :Rview<CR>
+map ,c :Rcontroller<CR>
+map <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " fucntion to automatic tabularize call
-inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+inoremap <silent> <Bar> <Bar> <Esc> :call <SID>align()<CR>a
 function! s:align()
   let p = '^\s*|\s.*\s|\s*$'
   if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
