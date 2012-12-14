@@ -5,36 +5,38 @@
 " settings for gvim (linux) / macvim
 :highlight Search guibg=yellow guifg=black
 
-set noswapfile
-set incsearch
-set cursorline
-set number
-set autoindent
-set nowrap
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set hlsearch
-set nolist
+set autoindent       " auto indent code
+set cursorline       " highlight current line
+set expandtab        " tab as spaces
+set hlsearch         " highlight all search pattern matches
+set incsearch        " enable incremental search
+set noeb vb t_vb=    " remove beep
+set nolist           " dont show end of line symbol
+set noswapfile       " no create swap file
+set nowrap           " dont wrap line
+set number           " show line number
 set shellcmdflag=-ic " load .bashrc
+set shiftwidth=2     " set indent space length
+set tabstop=2        " tab space length
 
 call pathogen#infect()
 
 " auto reload .vimrc or .gvimrc when file is saved
-autocmd bufwritepost dot.vimrc source $MYVIMRC
-autocmd bufwritepost dot.gvimrc source $MYVIMRC
-autocmd bufwritepost .vimrc source $MYVIMRC
 autocmd bufwritepost .gvimrc source $MYVIMRC
+autocmd bufwritepost .vimrc source $MYVIMRC
+autocmd bufwritepost dot.gvimrc source $MYVIMRC
+autocmd bufwritepost dot.vimrc source $MYVIMRC
 
 filetype plugin indent on
 
+" setting shorcuts
 imap <Tab> <C-X><C-F>
-map <D-t> :CommandT<CR>
-map <F2> :NERDTreeToggle<CR>
-map <C-b> :BufExplorer<CR>
+map ,c :Rcontroller<CR>
 map ,m :Rmodel<CR>
 map ,v :Rview<CR>
-map ,c :Rcontroller<CR>
+map <C-b> :BufExplorer<CR>
+map <D-t> :CommandT<CR>
+map <F2> :NERDTreeToggle<CR>
 map <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " fucntion to automatic tabularize call
