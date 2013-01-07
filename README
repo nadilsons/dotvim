@@ -1,4 +1,4 @@
 Installation:
 
-    git clone git@github.com:nadilsons/dotvim.git ~/.vim
+    git clone git://github.com/nadilsons/dotvim.git ~/.vim
     ~/.vim/install.sh
