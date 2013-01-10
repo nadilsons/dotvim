@@ -40,5 +40,5 @@ map <F2> :NERDTreeToggle<CR>
 map <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " plugins configs
-so config/dirdiff
-so config/tabularize
+so ~/.vim/conf/dirdiff
+so ~/.vim/conf/tabularize
