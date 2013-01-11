@@ -6,6 +6,7 @@
 :highlight Search guibg=yellow guifg=black
 
 set autoindent       " auto indent code
+set autoread         " auto reload file
 set cursorline       " highlight current line
 set expandtab        " tab as spaces
 set hlsearch         " highlight all search pattern matches
@@ -35,9 +36,12 @@ map ,c :Rcontroller<CR>
 map ,m :Rmodel<CR>
 map ,v :Rview<CR>
 map <C-b> :BufExplorer<CR>
+map <C-n> :DirDiffNext<CR>
 map <D-t> :CommandT<CR>
 map <F2> :NERDTreeToggle<CR>
 map <silent> <Space> :nohlsearch<Bar>:echo<CR>
+nnoremap dp dp<CR> ]c<CR>
+nnoremap do do<CR> ]c<CR>
 
 " plugins configs
 so ~/.vim/conf/dirdiff
