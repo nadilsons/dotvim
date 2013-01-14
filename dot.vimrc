@@ -40,8 +40,9 @@ map <C-n> :DirDiffNext<CR>
 map <D-t> :CommandT<CR>
 map <F2> :NERDTreeToggle<CR>
 map <silent> <Space> :nohlsearch<Bar>:echo<CR>
-nnoremap dp dp<CR> ]c<CR>
+nnoremap \a :Ack <cword><cr>
 nnoremap do do<CR> ]c<CR>
+nnoremap dp dp<CR> ]c<CR>
 
 " plugins configs
 so ~/.vim/conf/dirdiff
