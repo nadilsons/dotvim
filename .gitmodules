@@ -56,3 +56,7 @@
 [submodule "bundle/dirDiff"]
   path = bundle/dirDiff
   url = git://github.com/vim-scripts/DirDiff.vim.git
+# search a pattern recursively in directory
+[submodule "bundle/ack"]
+  path = bundle/ack
+  url = git://github.com/mileszs/ack.vim.git
