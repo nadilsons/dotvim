@@ -1,9 +1,16 @@
-":colorscheme slate
-:colorscheme desert
+"colorscheme slate
+colorscheme desert
 " settings for terminal version of vim
-:highlight Search ctermbg=yellow ctermfg=black
+highlight Search ctermbg=yellow ctermfg=black
 " settings for gvim (linux) / macvim
-:highlight Search guibg=yellow guifg=black
+highlight Search guibg=yellow guifg=black
+" setting for popup colors
+highlight PmenuSel ctermfg=white    ctermbg=darkblue gui=bold
+highlight Pmenu    ctermfg=darkblue ctermbg=darkgray gui=none
+"highlight Pmenu ctermbg=13 guibg=LightGray
+"highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
+"highlight PmenuSbar ctermbg=7 guibg=DarkGray
+"highlight PmenuThumb guibg=Black
 
 set autoindent       " auto indent code
 set autoread         " auto reload file
