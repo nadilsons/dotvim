@@ -4,13 +4,6 @@ colorscheme desert
 highlight Search ctermbg=yellow ctermfg=black
 " settings for gvim (linux) / macvim
 highlight Search guibg=yellow guifg=black
-" setting for popup colors
-highlight PmenuSel ctermfg=white    ctermbg=darkblue gui=bold
-highlight Pmenu    ctermfg=darkblue ctermbg=darkgray gui=none
-"highlight Pmenu ctermbg=13 guibg=LightGray
-"highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
-"highlight PmenuSbar ctermbg=7 guibg=DarkGray
-"highlight PmenuThumb guibg=Black
 
 set autoindent       " auto indent code
 set autoread         " auto reload file
@@ -38,7 +31,6 @@ autocmd bufwritepost dot.vimrc source $MYVIMRC
 filetype plugin indent on
 
 " setting shorcuts
-imap <Tab> <C-X><C-F>
 map ,c :Rcontroller<CR>
 map ,m :Rmodel<CR>
 map ,v :Rview<CR>
@@ -50,7 +42,3 @@ map <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nnoremap \a :Ack <cword><cr>
 nnoremap do do<CR> ]c<CR>
 nnoremap dp dp<CR> ]c<CR>
-
-" plugins configs
-so ~/.vim/conf/dirdiff
-so ~/.vim/conf/tabularize
