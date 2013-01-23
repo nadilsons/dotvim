@@ -1,9 +1,5 @@
 "colorscheme slate
 colorscheme desert
-" settings for terminal version of vim
-highlight Search ctermbg=yellow ctermfg=black
-" settings for gvim (linux) / macvim
-highlight Search guibg=yellow guifg=black
 
 set autoindent       " auto indent code
 set autoread         " auto reload file
@@ -24,10 +20,7 @@ set tabstop=2        " tab space length
 call pathogen#infect()
 
 " auto reload .vimrc or .gvimrc when file is saved
-autocmd bufwritepost .gvimrc source $MYVIMRC
-autocmd bufwritepost .vimrc source $MYVIMRC
-autocmd bufwritepost dot.gvimrc source $MYVIMRC
-autocmd bufwritepost dot.vimrc source $MYVIMRC
+autocmd bufwritepost *vimrc source $MYVIMRC | source $MYGVIMRC | call Pl#Load()
 
 filetype plugin indent on
 
