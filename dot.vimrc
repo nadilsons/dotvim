@@ -11,6 +11,7 @@ set cursorline       " highlight current line
 set expandtab        " tab as spaces
 set hlsearch         " highlight all search pattern matches
 set incsearch        " enable incremental search
+set laststatus=2     " always show statusline
 set noeb vb t_vb=    " remove beep
 set nolist           " dont show end of line symbol
 set noswapfile       " no create swap file
