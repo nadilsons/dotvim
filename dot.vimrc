@@ -28,7 +28,7 @@ filetype plugin indent on
 map ,c :Rcontroller<CR>
 map ,m :Rmodel<CR>
 map ,v :Rview<CR>
-map <C-b> :BufExplorer<CR>
+map <C-b> :CommandTBuffer<CR>
 map <C-n> :DirDiffNext<CR>
 map <D-t> :CommandT<CR>
 map <F2> :NERDTreeToggle<CR>
