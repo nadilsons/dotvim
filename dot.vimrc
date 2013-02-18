@@ -1,21 +1,22 @@
 "colorscheme slate
 colorscheme desert
 
-set autoindent       " auto indent code
-set autoread         " auto reload file
-set cursorline       " highlight current line
-set expandtab        " tab as spaces
-set hlsearch         " highlight all search pattern matches
-set incsearch        " enable incremental search
-set laststatus=2     " always show statusline
-set noeb vb t_vb=    " remove beep
-set nolist           " dont show end of line symbol
-set noswapfile       " no create swap file
-set nowrap           " dont wrap line
-set number           " show line number
-set shellcmdflag=-ic " load .bashrc
-set shiftwidth=2     " set indent space length
-set tabstop=2        " tab space length
+set autoindent        " auto indent code
+set autoread          " auto reload file
+set cursorline        " highlight current line
+set expandtab         " tab as spaces
+set foldmethod=marker " folds defined by markers in the text
+set hlsearch          " highlight all search pattern matches
+set incsearch         " enable incremental search
+set laststatus=2      " always show statusline
+set noeb vb t_vb=     " remove beep
+set nolist            " dont show end of line symbol
+set noswapfile        " no create swap file
+set nowrap            " dont wrap line
+set number            " show line number
+set shellcmdflag=-ic  " load .bashrc
+set shiftwidth=2      " set indent space length
+set tabstop=2         " tab space length
 
 call pathogen#infect()
 
