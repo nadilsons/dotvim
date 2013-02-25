@@ -30,10 +30,11 @@ map ,c :Rcontroller<CR>
 map ,m :Rmodel<CR>
 map ,v :Rview<CR>
 map <C-b> :BufExplorer<CR>
+map <C-l> :set list!<CR><BAR>:echo<CR>
 map <C-n> :DirDiffNext<CR>
 map <D-t> :CommandT<CR>
 map <F2> :NERDTreeToggle<CR>
-map <silent> <Space> :nohlsearch<Bar>:echo<CR>
-nnoremap \a :Ack <cword><cr>
+map <silent> <Space> :nohlsearch<BAR>:echo<CR>
+nnoremap \a :Ack <cword><CR>
 nnoremap do do<CR> ]c<CR>
 nnoremap dp dp<CR> ]c<CR>
