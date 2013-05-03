@@ -3,6 +3,7 @@ colorscheme desert
 
 set autoindent        " auto indent code
 set autoread          " auto reload file
+set colorcolumn=80    " show column at 80
 set cursorline        " highlight current line
 set expandtab         " tab as spaces
 set foldmethod=marker " folds defined by markers in the text
@@ -11,6 +12,7 @@ set incsearch         " enable incremental search
 set laststatus=2      " always show statusline
 set noeb vb t_vb=     " remove beep
 set nolist            " dont show end of line symbol
+set nomousehide       " dont hide mouse while typing
 set noswapfile        " no create swap file
 set nowrap            " dont wrap line
 set number            " show line number
