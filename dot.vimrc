@@ -3,7 +3,6 @@ colorscheme desert
 
 set autoindent        " auto indent code
 set autoread          " auto reload file
-set colorcolumn=80    " show column at 80
 set cursorline        " highlight current line
 set expandtab         " tab as spaces
 set foldmethod=marker " folds defined by markers in the text
