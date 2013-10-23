@@ -4,6 +4,7 @@ colorscheme desert
 let g:CommandTMaxFiles = 50000      " commant-t scan files size
 set autoindent                      " auto indent code
 set autoread                        " auto reload file
+set colorcolumn=80                  " 80 column line
 set cursorline                      " highlight current line
 set expandtab                       " tab as spaces
 set foldmethod=marker               " folds defined by markers in the text
