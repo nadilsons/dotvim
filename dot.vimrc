@@ -39,6 +39,7 @@ map <silent> <Space> :nohlsearch<BAR>:echo<CR>
 nnoremap \a :Ack <cword><CR>
 nnoremap do do<CR> ]c<CR>
 nnoremap dp dp<CR> ]c<CR>
+noremap <F5> :CommandTFlush<CR>
 
 " auto reload .vimrc or .gvimrc when file is saved
 autocmd bufwritepost *vimrc source $MYVIMRC | source $MYGVIMRC | call Pl#Load()
