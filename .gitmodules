@@ -68,3 +68,10 @@
 [submodule "bundle/syntastic"]
   path = bundle/syntastic
   url = https://github.com/scrooloose/syntastic.git
+# make refactor more easy
+[submodule "bundle/vim-ruby-refactoring"]
+	path = bundle/vim-ruby-refactoring
+	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/tmhedberg/matchit.git
