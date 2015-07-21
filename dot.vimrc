@@ -21,9 +21,9 @@ set shellcmdflag=-ic                " load .bashrc
 call pathogen#infect()
 
 filetype plugin indent on
-" shiftwidth  (sw)  : set indent space length
 " tabstop     (ts)  : tab space length
-" softtabstop (sts) : makes spaces feel like tabs on  deleting
+" shiftwidth  (sw)  : set indent space length
+" softtabstop (sts) : makes spaces feel like tabs on deleting
 " expandtab         : tab as spaces
 autocmd Filetype html       setlocal ts=2 sw=2 sts=2 expandtab
 autocmd Filetype ruby       setlocal ts=2 sw=2 sts=2 expandtab
