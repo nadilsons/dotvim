@@ -6,7 +6,6 @@ set autoindent                      " auto indent code
 set autoread                        " auto reload file
 set colorcolumn=80                  " 80 column line
 set cursorline                      " highlight current line
-set expandtab                       " tab as spaces
 set foldmethod=marker               " folds defined by markers in the text
 set hlsearch                        " highlight all search pattern matches
 set incsearch                       " enable incremental search
@@ -18,13 +17,17 @@ set noswapfile                      " no create swap file
 set nowrap                          " dont wrap line
 set number                          " show line number
 set shellcmdflag=-ic                " load .bashrc
-set shiftwidth=2                    " set indent space length
-set tabstop=2                       " tab space length
-set wildignore+=.git,tmp,*swp,*.log " ignore file on command-t and ack
 
 call pathogen#infect()
 
 filetype plugin indent on
+" shiftwidth  (sw)  : set indent space length
+" tabstop     (ts)  : tab space length
+" softtabstop (sts) : makes spaces feel like tabs on  deleting
+" expandtab         : tab as spaces
+autocmd Filetype html       setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype ruby       setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=4 expandtab
 
 " setting shorcuts
 map ,c :Rcontroller<CR>
