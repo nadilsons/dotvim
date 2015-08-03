@@ -20,15 +20,6 @@ set shellcmdflag=-ic                " load .bashrc
 
 call pathogen#infect()
 
-filetype plugin indent on
-" tabstop     (ts)  : tab space length
-" shiftwidth  (sw)  : set indent space length
-" softtabstop (sts) : makes spaces feel like tabs on deleting
-" expandtab         : tab as spaces
-autocmd Filetype html       setlocal ts=2 sw=2 sts=2 expandtab
-autocmd Filetype ruby       setlocal ts=2 sw=2 sts=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sw=4 sts=4 expandtab
-
 " setting shorcuts
 map ,c :Rcontroller<CR>
 map ,m :Rmodel<CR>
