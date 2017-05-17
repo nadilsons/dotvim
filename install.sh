@@ -8,4 +8,4 @@ git submodule update
 cd bundle/command-t
 bundle
 bundle exec rake make
-echo "install complete!!"
+echo "vim config install complete!!"
