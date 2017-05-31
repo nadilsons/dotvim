@@ -13,8 +13,8 @@ autocmd Filetype ruby       setlocal ts=2 sw=2 sts=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=4 expandtab
 
 " Forcing syntax color for files with odd extensions
-autocmd BufNewFile,BufReadPost *.coffee     set syntax=ruby " coffee script
-autocmd BufNewFile,BufReadPost *.erb        set syntax=html " erb
-autocmd BufNewFile,BufReadPost *.hbs        set syntax=html " handlebars
-autocmd BufNewFile,BufReadPost *.handlebars set syntax=html " handlebars
-autocmd BufNewFile,BufReadPost *.ejs        set syntax=html " ejs
+autocmd BufNewFile,BufReadPost *.coffee     set filetype=ruby " coffee script
+autocmd BufNewFile,BufReadPost *.erb        set filetype=html " erb
+autocmd BufNewFile,BufReadPost *.hbs        set filetype=html " handlebars
+autocmd BufNewFile,BufReadPost *.handlebars set filetype=html " handlebars
+autocmd BufNewFile,BufReadPost *.ejs        set filetype=html " ejs
