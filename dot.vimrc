@@ -1,7 +1,8 @@
-"colorscheme slate
 colorscheme desert
 
 let g:CommandTMaxFiles = 50000      " commant-t scan files size
+filetype off                        " required by vundle
+set nocompatible                    " required by vundle
 set autoindent                      " auto indent code
 set autoread                        " auto reload file
 set colorcolumn=80                  " 80 column line
@@ -18,7 +19,29 @@ set nowrap                          " dont wrap line
 set number                          " show line number
 set shellcmdflag=-ic                " load .bashrc
 
-call pathogen#infect()
+" Vundle plugins
+set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle, required
+Plugin 'ervandew/supertab'          " autocomplete with tab
+Plugin 'wincent/Command-T'          " command-t like mate
+Plugin 'scrooloose/nerdtree'        " nerdtree is nerdtree
+Plugin 'corntrace/bufexplorer'      " easy way show file's buffer
+Plugin 'Lokaltog/vim-powerline'     " show a line with file details
+Plugin 'Raimondi/delimitMate'       " automatic closing of quotes, parenthesis, brackets, etc
+Plugin 'msanders/snipmate.vim'      " snippets like textmate behavior
+Plugin 'tpope/vim-endwise'          " plugin that end certain structures automatically
+Plugin 'tpope/vim-repeat'           " repeat last command with '.'
+Plugin 'tpope/vim-rails'            " work with rails easy
+Plugin 'rodjek/vim-puppet'          " syntax highligh puppet scripts
+Plugin 'godlygeek/tabular'          " plugin that align text
+Plugin 'vim-scripts/DirDiff.vim'    " performs a recursive diff on two directories
+Plugin 'mileszs/ack.vim'            " search a pattern recursively in directory
+Plugin 'airblade/vim-gitgutter'     " show git diff in editor
+Plugin 'scrooloose/syntastic'       " show syntax errors after save
+
+call vundle#end()
 
 " setting shorcuts
 map ,c :Rcontroller<CR>
