@@ -18,3 +18,4 @@ autocmd BufNewFile,BufReadPost *.erb        set filetype=html " erb
 autocmd BufNewFile,BufReadPost *.hbs        set filetype=html " handlebars
 autocmd BufNewFile,BufReadPost *.handlebars set filetype=html " handlebars
 autocmd BufNewFile,BufReadPost *.ejs        set filetype=html " ejs
+autocmd BufNewFile,BufReadPost *.vue        set filetype=html " vue
