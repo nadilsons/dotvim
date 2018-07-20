@@ -1,0 +1,26 @@
+snippet rcc "React Class Component" b
+	import React, { Component } from 'react';
+	import PropTypes from 'prop-types';
+	import styles from './$1.css';
+
+	class ${1:`expand('%:t:r')`} extends Component {
+		static propTypes = {
+			children: PropTypes.node,
+			className: PropTypes.string,
+		};
+
+		constructor(props) {
+			super(props);
+		}
+
+		render() {
+			return (
+				<div className={styles.base}>
+					$2
+				</div>
+			);
+		}
+	}
+
+	export default $1;
+endsnippet
