@@ -7,7 +7,7 @@ set autoindent                      " auto indent code
 set autoread                        " auto reload file
 set colorcolumn=80                  " 80 column line
 set cursorline                      " highlight current line
-set foldmethod=marker               " folds defined by markers in the text
+set nofoldenable                    " disable folding by default
 set hlsearch                        " highlight all search pattern matches
 set incsearch                       " enable incremental search
 set laststatus=2                    " always show statusline
@@ -40,6 +40,8 @@ Plugin 'vim-scripts/DirDiff.vim'    " performs a recursive diff on two directori
 Plugin 'mileszs/ack.vim'            " search a pattern recursively in directory
 Plugin 'airblade/vim-gitgutter'     " show git diff in editor
 Plugin 'scrooloose/syntastic'       " show syntax errors after save
+Plugin 'pangloss/vim-javascript'    " improve javascript syntax highligtht
+Plugin 'mxw/vim-jsx'                " support to react code
 
 call vundle#end()
 
