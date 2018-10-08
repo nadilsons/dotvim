@@ -7,6 +7,7 @@ git submodule update
 vim +PluginInstall +qall
 
 cd bundle/Command-T
+gem install bundle
 bundle
 bundle exec rake make
 echo "vim config install complete!!"
