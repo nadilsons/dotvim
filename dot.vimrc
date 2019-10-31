@@ -41,7 +41,7 @@ Plugin 'mileszs/ack.vim'            " search a pattern recursively in directory
 Plugin 'airblade/vim-gitgutter'     " show git diff in editor
 Plugin 'scrooloose/syntastic'       " show syntax errors after save
 Plugin 'pangloss/vim-javascript'    " improve javascript syntax highligtht
-Plugin 'mxw/vim-jsx'                " support to react code
+Plugin 'maxmellon/vim-jsx-pretty'   " support to react code
 
 call vundle#end()
 
