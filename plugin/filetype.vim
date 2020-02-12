@@ -8,9 +8,9 @@ set tabstop=4      " show existing tab with 4 spaces width
 set shiftwidth=4   " when indenting with '>', use 4 spaces width
 set expandtab      " On pressing tab, insert spaces
 
-autocmd Filetype html       setlocal ts=2 sw=2 sts=2 expandtab
-autocmd Filetype ruby       setlocal ts=2 sw=2 sts=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sw=4 sts=4 expandtab
+autocmd Filetype html       setlocal ts=2 sw=2 sts=2 expandtab smartindent
+autocmd Filetype ruby       setlocal ts=2 sw=2 sts=2 expandtab smartindent
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab smartindent
 
 " Forcing syntax color for files with odd extensions
 autocmd BufNewFile,BufReadPost *.coffee     set filetype=ruby " coffee script
