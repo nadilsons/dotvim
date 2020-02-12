@@ -34,7 +34,6 @@ Plugin 'msanders/snipmate.vim'      " snippets like textmate behavior
 Plugin 'tpope/vim-endwise'          " plugin that end certain structures automatically
 Plugin 'tpope/vim-repeat'           " repeat last command with '.'
 Plugin 'tpope/vim-rails'            " work with rails easy
-Plugin 'rodjek/vim-puppet'          " syntax highligh puppet scripts
 Plugin 'godlygeek/tabular'          " plugin that align text
 Plugin 'vim-scripts/DirDiff.vim'    " performs a recursive diff on two directories
 Plugin 'mileszs/ack.vim'            " search a pattern recursively in directory
