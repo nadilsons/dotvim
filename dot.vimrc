@@ -41,6 +41,7 @@ Plugin 'airblade/vim-gitgutter'     " show git diff in editor
 Plugin 'scrooloose/syntastic'       " show syntax errors after save
 Plugin 'pangloss/vim-javascript'    " improve javascript syntax highligtht
 Plugin 'maxmellon/vim-jsx-pretty'   " support to react code
+Plugin 'rhysd/git-messenger.vim'    " show git details for current line
 
 call vundle#end()
 
@@ -48,6 +49,7 @@ call vundle#end()
 map ,c :Rcontroller<CR>
 map ,m :Rmodel<CR>
 map ,v :Rview<CR>
+map gm :GitMessenger<CR>
 map <C-b> :BufExplorer<CR>
 map <C-l> :set list!<CR><BAR>:echo<CR>
 map <C-n> :DirDiffNext<CR>
