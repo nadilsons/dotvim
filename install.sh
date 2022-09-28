@@ -7,6 +7,7 @@ git submodule update
 vim +PluginInstall +qall
 
 cd bundle/Command-T
+git checkout 5.0.5
 gem install bundle
 bundle
 bundle exec rake make
