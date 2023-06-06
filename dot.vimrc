@@ -33,7 +33,8 @@ Plugin 'Raimondi/delimitMate'       " automatic closing of quotes, parenthesis, 
 Plugin 'msanders/snipmate.vim'      " snippets like textmate behavior
 Plugin 'tpope/vim-endwise'          " plugin that end certain structures automatically
 Plugin 'tpope/vim-repeat'           " repeat last command with '.'
-Plugin 'tpope/vim-rails'            " work with rails easy
+Plugin 'tpope/vim-rails'            " working with rails easily
+Plugin 'rust-lang/rust.vim'         " working with rust easily
 Plugin 'godlygeek/tabular'          " plugin that align text
 Plugin 'vim-scripts/DirDiff.vim'    " performs a recursive diff on two directories
 Plugin 'mileszs/ack.vim'            " search a pattern recursively in directory
