@@ -1,5 +1,3 @@
-colorscheme desert
-
 let g:CommandTMaxFiles = 50000      " commant-t scan files size
 filetype off                        " required by vundle
 set nocompatible                    " required by vundle
@@ -43,8 +41,11 @@ Plugin 'scrooloose/syntastic'       " show syntax errors after save
 Plugin 'pangloss/vim-javascript'    " improve javascript syntax highligtht
 Plugin 'maxmellon/vim-jsx-pretty'   " support to react code
 Plugin 'rhysd/git-messenger.vim'    " show git details for current line
+Plugin 'joshdick/onedark.vim'
 
 call vundle#end()
+
+colorscheme onedark
 
 " setting shorcuts
 map ,c :Rcontroller<CR>
