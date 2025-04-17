@@ -41,7 +41,7 @@ Plugin 'scrooloose/syntastic'       " show syntax errors after save
 Plugin 'pangloss/vim-javascript'    " improve javascript syntax highligtht
 Plugin 'maxmellon/vim-jsx-pretty'   " support to react code
 Plugin 'rhysd/git-messenger.vim'    " show git details for current line
-Plugin 'joshdick/onedark.vim'
+Plugin 'joshdick/onedark.vim'       " one dark theme
 
 call vundle#end()
 
