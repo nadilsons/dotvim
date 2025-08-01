@@ -36,7 +36,6 @@ Plugin 'tpope/vim-rails'            " working with rails easily
 Plugin 'rust-lang/rust.vim'         " working with rust easily
 Plugin 'godlygeek/tabular'          " plugin that align text
 Plugin 'vim-scripts/DirDiff.vim'    " performs a recursive diff on two directories
-Plugin 'mileszs/ack.vim'            " search a pattern recursively in directory
 Plugin 'airblade/vim-gitgutter'     " show git diff in editor
 Plugin 'scrooloose/syntastic'       " show syntax errors after save
 Plugin 'pangloss/vim-javascript'    " improve javascript syntax highligtht
