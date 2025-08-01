@@ -59,7 +59,7 @@ map <C-n> :DirDiffNext<CR>
 map <D-t> :Files<CR>
 map <F2> :NERDTreeToggle<CR>
 map <silent> <Space> :nohlsearch<BAR>:echo<CR>
-nnoremap \a :Ack <cword><CR>
+nnoremap \a :RG <C-R><C-W><CR>
 nnoremap do do<CR> ]c<CR>
 nnoremap dp dp<CR> ]c<CR>
 noremap <F5> :CommandTFlush<CR>
