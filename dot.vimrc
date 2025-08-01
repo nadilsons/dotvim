@@ -23,7 +23,8 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle, required
 Plugin 'ervandew/supertab'          " autocomplete with tab
-Plugin 'wincent/Command-T'          " command-t like mate
+Plugin 'junegunn/fzf'               " fzf integration
+Plugin 'junegunn/fzf.vim'           " fzf integration
 Plugin 'scrooloose/nerdtree'        " nerdtree is nerdtree
 Plugin 'corntrace/bufexplorer'      " easy way show file's buffer
 Plugin 'Lokaltog/vim-powerline'     " show a line with file details
@@ -55,7 +56,7 @@ map gm :GitMessenger<CR>
 map <C-b> :BufExplorer<CR>
 map <C-l> :set list!<CR><BAR>:echo<CR>
 map <C-n> :DirDiffNext<CR>
-map <D-t> :CommandT<CR>
+map <D-t> :Files<CR>
 map <F2> :NERDTreeToggle<CR>
 map <silent> <Space> :nohlsearch<BAR>:echo<CR>
 nnoremap \a :Ack <cword><CR>
