@@ -1,5 +1,3 @@
-let g:CommandTMaxFiles = 50000      " commant-t scan files size
-filetype off                        " required by vundle
 set nocompatible                    " required by vundle
 set autoindent                      " auto indent code
 set autoread                        " auto reload file
@@ -17,33 +15,32 @@ set nowrap                          " dont wrap line
 set number                          " show line number
 set shellcmdflag=-ic                " load .bashrc
 
-" Vundle plugins
-set rtp+=~/.vim/bundle/Vundle.vim   " set the runtime path to include Vundle and initialize
-call vundle#begin()
+" Plugins
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'       " let Vundle manage Vundle, required
-Plugin 'ervandew/supertab'          " autocomplete with tab
-Plugin 'junegunn/fzf'               " fzf integration
-Plugin 'junegunn/fzf.vim'           " fzf integration
-Plugin 'scrooloose/nerdtree'        " nerdtree is nerdtree
-Plugin 'corntrace/bufexplorer'      " easy way show file's buffer
-Plugin 'Lokaltog/vim-powerline'     " show a line with file details
-Plugin 'Raimondi/delimitMate'       " automatic closing of quotes, parenthesis, brackets, etc
-Plugin 'msanders/snipmate.vim'      " snippets like textmate behavior
-Plugin 'tpope/vim-endwise'          " plugin that end certain structures automatically
-Plugin 'tpope/vim-repeat'           " repeat last command with '.'
-Plugin 'tpope/vim-rails'            " working with rails easily
-Plugin 'rust-lang/rust.vim'         " working with rust easily
-Plugin 'godlygeek/tabular'          " plugin that align text
-Plugin 'vim-scripts/DirDiff.vim'    " performs a recursive diff on two directories
-Plugin 'airblade/vim-gitgutter'     " show git diff in editor
-Plugin 'scrooloose/syntastic'       " show syntax errors after save
-Plugin 'pangloss/vim-javascript'    " improve javascript syntax highligtht
-Plugin 'maxmellon/vim-jsx-pretty'   " support to react code
-Plugin 'rhysd/git-messenger.vim'    " show git details for current line
-Plugin 'joshdick/onedark.vim'       " one dark theme
+Plug 'VundleVim/Vundle.vim'                          " let Vundle manage Vundle, required
+Plug 'ervandew/supertab'                             " autocomplete with tab
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }  " fzf integration
+Plug 'junegunn/fzf.vim'                              " fzf integration
+Plug 'scrooloose/nerdtree'                           " nerdtree is nerdtree
+Plug 'corntrace/bufexplorer'                         " easy way show file's buffer
+Plug 'Lokaltog/vim-powerline'                        " show a line with file details
+Plug 'Raimondi/delimitMate'                          " automatic closing of quotes, parenthesis, brackets, etc
+Plug 'msanders/snipmate.vim'                         " snippets like textmate behavior
+Plug 'tpope/vim-endwise'                             " plugin that end certain structures automatically
+Plug 'tpope/vim-repeat'                              " repeat last command with '.'
+Plug 'tpope/vim-rails'                               " working with rails easily
+Plug 'rust-lang/rust.vim'                            " working with rust easily
+Plug 'godlygeek/tabular'                             " plugin that align text
+Plug 'vim-scripts/DirDiff.vim'                       " performs a recursive diff on two directories
+Plug 'airblade/vim-gitgutter'                        " show git diff in editor
+Plug 'scrooloose/syntastic'                          " show syntax errors after save
+Plug 'pangloss/vim-javascript'                       " improve javascript syntax highligtht
+Plug 'maxmellon/vim-jsx-pretty'                      " support to react code
+Plug 'rhysd/git-messenger.vim'                       " show git details for current line
+Plug 'joshdick/onedark.vim'                          " one dark theme
 
-call vundle#end()
+call plug#end()
 
 colorscheme onedark
 
