@@ -61,7 +61,6 @@ map <silent> <Space> :nohlsearch<BAR>:echo<CR>
 nnoremap \a :RG <C-R><C-W><CR>
 nnoremap do do<CR> ]c<CR>
 nnoremap dp dp<CR> ]c<CR>
-noremap <F5> :CommandTFlush<CR>
 
 " delete trailing white space on save
 func! DeleteTrailingWS()
